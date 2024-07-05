@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
 :root {
   --primary-color: #2042b6;
-  --secondary-color: #ffffff;
+  --secondary-color: #90b8f0;
   --xxl: 76px;
   --xl: 48px;
+  --m: 30px;
   --l: 36px;
+  --bs: 20px;
   --s: 16px;
+  --xs: 14px;
 }
 * {
   font-family: "Libre Caslon Text", serif;
@@ -15,7 +18,11 @@
   margin: 0;
 }
 body {
-  background-color: #ededed;
+  /* background-color: #d2d3d4; */
+  background-color: #e6e6e6;
+}
+.bg-footer {
+  background-color: #d6d8d8;
 }
 .bg-prime {
   background: var(--primary-color);
@@ -31,12 +38,24 @@ body {
   font-size: var(--xl);
   font-weight: 400;
 }
+.text_m {
+  font-size: var(--m);
+  font-weight: 400;
+}
 .text_l {
   font-size: var(--l);
   font-weight: 400;
 }
+.text_bs {
+  font-size: var(--bs);
+  font-weight: 400;
+}
 .text_s {
   font-size: var(--s);
+  font-weight: 350;
+}
+.text_xs {
+  font-size: var(--xs);
   font-weight: 350;
 }
 .line-clamp-4 {
@@ -78,4 +97,20 @@ body {
 
 .nav_btn.active {
   background-color: #afcd80;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 80%;
+}
+::-webkit-scrollbar-track {
+  background: #e5f1f3;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
 }
