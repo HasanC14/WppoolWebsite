@@ -2,6 +2,7 @@
 :root {
   --primary-color: #2042b6;
   --secondary-color: #90b8f0;
+  --background-color: #e6e6e6;
   --xxl: 76px;
   --xl: 48px;
   --m: 30px;
@@ -12,20 +13,22 @@
 }
 * {
   font-family: "Libre Caslon Text", serif;
-
   font-style: normal;
   padding: 0;
   margin: 0;
 }
 body {
   /* background-color: #d2d3d4; */
-  background-color: #e6e6e6;
+  background-color: var(--background-color);
 }
 .bg-footer {
   background-color: #d6d8d8;
 }
 .bg-prime {
   background: var(--primary-color);
+}
+.bg_gray {
+  background: var(--background-color);
 }
 .text-prime {
   color: var(--primary-color);
@@ -113,4 +116,11 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  transform: translateY(0);
+  margin-top: 1rem;
 }
