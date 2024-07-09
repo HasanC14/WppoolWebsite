@@ -68,14 +68,13 @@ body {
   overflow: hidden;
 }
 
-/* Image animation */
+/* Scale animation */
 .scale_animation {
   scale: 0.8;
   opacity: 0;
   animation: fade_in linear forwards;
   animation-timeline: view();
   animation-range: 250px 500px;
-  /* Animation starts as soon as the scroll position is 500 pixels or more from the top of the viewport. */
 }
 @keyframes fade_in {
   to {
@@ -84,14 +83,13 @@ body {
   }
 }
 
-/* Image animation */
+/* Slide animation */
 .slide_animation {
   transform: translateX(-100%);
   opacity: 0;
   animation: slide_in 3s linear forwards;
   animation-timeline: view();
   animation-range: 250px 500px;
-  /* Animation starts as soon as the scroll position is 500 pixels or more from the top of the viewport. */
 }
 
 @keyframes slide_in {
@@ -169,5 +167,10 @@ body {
 
   .text_xs {
     font-size: calc(var(--xs) / 2);
+  }
+
+  .scale_animation,
+  .slide_animation {
+    animation-range: 150px 350px;
   }
 }
