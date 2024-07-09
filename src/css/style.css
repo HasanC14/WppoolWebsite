@@ -141,3 +141,33 @@ body {
   transform: translateY(0);
   margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  .text_xxl {
+    font-size: calc(var(--xxl) / 2);
+  }
+
+  .text_xl {
+    font-size: calc(var(--xl) / 2);
+  }
+
+  .text_m {
+    font-size: calc(var(--m) / 2);
+  }
+
+  .text_l {
+    font-size: calc(var(--l) / 2);
+  }
+
+  .text_bs {
+    font-size: calc(var(--bs) / 2);
+  }
+
+  .text_s {
+    font-size: calc(var(--s) / 2);
+  }
+
+  .text_xs {
+    font-size: calc(var(--xs) / 2);
+  }
+}
