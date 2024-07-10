@@ -324,7 +324,8 @@
     </div>
 
     <!-- Botton texts and button -->
-    <div class="absolute bottom-0 right-0 animate-bounce p-6 rounded-full bg-white me-16 mb-12 shadow-2xl shadow-black">
+    <div
+      class="absolute bottom-0 right-0 animate-bounce md:p-6 p-3 rounded-full bg-white md:me-16 me-4 mb-12 shadow-2xl shadow-black">
       <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M7.99881 16.0769L0.921875 8.99992L1.86548 8.05632L7.33214 13.523V0.333252H8.66548V13.523L14.1321 8.05632L15.0757 8.99992L7.99881 16.0769Z"
@@ -354,31 +355,30 @@
 
   <!-- Chart -->
   <section
-    class="slide_animation bg-white m-10 my-28 rounded-md flex md:space-x-4 space-x-0 lg:flex-row flex-col md:p-8 p-4">
+    class="slide_animation bg-white md:m-10 m-4 md:my-28 my-10 rounded-md flex md:space-x-4 space-x-0 lg:flex-row flex-col md:p-8 p-4">
     <!-- Sidebar -->
-    <div class="lg:w-1/4 w-full bg_gray rounded-md p-4">
+    <div class="lg:w-1/4 w-full bg_gray rounded-md p-4 ">
       <div class="rounded-md  text_s">
         <ul class="space-y-4">
-          <li
-            class="flex justify-between items-center p-4 bg-prime text-white rounded-md shadow-md shadow-gray-300 scale-[102%]">
+          <li class="flex justify-between items-center px-4 py-2 cursor-pointer activeBtnSidebar sidebarBtn">
             <span class="">The Index</span>
             <span class="">-</span>
           </li>
-          <li class="flex justify-between items-center px-4 py-2 ">
-            <span class="text-gray-700">The Index Tab Two</span>
-            <span class="text-gray-400">+</span>
+          <li class="flex justify-between items-center px-4 py-2 cursor-pointer sidebarBtn">
+            <span class="">The Index Tab Two</span>
+            <span class="">+</span>
           </li>
-          <li class="flex justify-between items-center px-4 py-2 ">
-            <span class="text-gray-700">The Index Tab Three</span>
-            <span class="text-gray-400">+</span>
+          <li class="flex justify-between items-center px-4 py-2 cursor-pointer sidebarBtn">
+            <span class="">The Index Tab Three</span>
+            <span class="">+</span>
           </li>
-          <li class="flex justify-between items-center px-4 py-2 ">
-            <span class="text-gray-700">The Index Tab Four</span>
-            <span class="text-gray-400">+</span>
+          <li class="flex justify-between items-center px-4 py-2 cursor-pointer sidebarBtn">
+            <span class="">The Index Tab Four</span>
+            <span class="">+</span>
           </li>
-          <li class="flex justify-between items-center px-4 py-2">
-            <span class="text-gray-700">The Index Tab Five</span>
-            <span class="text-gray-400">+</span>
+          <li class="flex justify-between items-center px-4 py-2 cursor-pointer sidebarBtn">
+            <span class="">The Index Tab Five</span>
+            <span class="">+</span>
           </li>
         </ul>
       </div>
@@ -453,14 +453,14 @@
 
         <!-- Button Group -->
         <div class="flex items-center space-x-1 bg-gray-100 rounded-full px-4 py-2">
-          <button class="text_xs text-gray-500 px-2 py-1 rounded-full">1Y</button>
-          <button class="text_xs text-gray-500 px-2 py-1 rounded-full">YTD</button>
-          <button class="text_xs text-gray-500 px-2 py-1 rounded-full">1M</button>
-          <button class="text_xs text-gray-500 px-2 py-1 rounded-full">1W</button>
-          <button class="text_xs bg-prime text-white px-2 py-1 rounded-full shadow-md shadow-gray-400">6M</button>
+          <button class=" filter_btn text_xs px-2 py-1 rounded-full">1Y</button>
+          <button class=" filter_btn text_xs px-2 py-1 rounded-full">YTD</button>
+          <button class=" filter_btn text_xs px-2 py-1 rounded-full">1M</button>
+          <button class=" filter_btn text_xs px-2 py-1 rounded-full">1W</button>
+          <button class=" filter_btn text_xs  px-2 py-1 activeBtn">6M</button>
         </div>
       </div>
-      <div class="bg-white p-4 rounded-lg shadow-lg">
+      <div class="bg-white md:p-4 p-1 rounded-lg shadow-lg">
         <canvas id="myChart"></canvas>
       </div>
     </div>
@@ -667,7 +667,7 @@
   </section>
 
   <!-- Slider -->
-  <section class="relative my-28 slide_animation">
+  <section class="relative md:my-28 my-10 slide_animation">
     <div class="absolute top-4 lg:right-48 right-0 -z-10">
       <svg class="lg:w-[44rem] w-96" viewBox="0 0 617 597" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.4">
@@ -2283,7 +2283,8 @@
   </section>
 
   <!-- About -->
-  <section class="scale_animation max-w-7xl mx-auto my-28 border-b-2 border-t-2 border-[#90B8F0] md:py-24 py-16 p-4">
+  <section
+    class="scale_animation max-w-7xl mx-auto md:my-28 my-10 border-b-2 border-t-2 border-[#90B8F0] md:py-24 py-16 p-4">
     <div class="bg-white rounded-md flex md:justify-between justify-center items-center md:flex-row flex-col">
       <div class="md:w-4/7 w-full space-y-2 p-10">
         <div class="text_xl">About WPPOOL</div>
@@ -2860,35 +2861,31 @@
         datasets: [
           {
             label: 'WPPOOL',
-            data: [-10, 20, 50, 30, 70, 90, 100],
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            data: [-10, 20, 50, 30, 70, 90, 100, -5, 25, 45, 60, 40, 85, 95],
+            borderColor: '#FC714D',
             fill: false,
-            tension: 0.4
+            tension: 0.1
           },
           {
             label: 'Google',
-            data: [-5, 25, 45, 60, 40, 85, 95],
-            borderColor: 'rgb(54, 162, 235)',
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            data: [-5, 25, 45, 60, 40, 85, 95, 0, 10, 30, 50, 80, 60, 70],
+            borderColor: '#615DE3',
             fill: false,
-            tension: 0.4
+            tension: .1
           },
           {
             label: 'Microsoft',
-            data: [0, 10, 30, 50, 80, 60, 70],
-            borderColor: 'rgb(75, 192, 192)',
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            data: [0, 10, 30, 50, 80, 60, 70, 10, 40, 20, 60, 50, 95, 85,],
+            borderColor: '#AFCD80',
             fill: false,
-            tension: 0.4
+            tension: 0.1
           },
           {
             label: 'Twitter',
-            data: [10, 40, 20, 60, 50, 95, 85],
-            borderColor: 'rgb(153, 102, 255)',
-            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+            data: [10, 40, 20, 60, 50, 95, 85, -10, 20, 50, 30, 70, 90, 100],
+            borderColor: '#6F34A1',
             fill: false,
-            tension: 0.4
+            tension: 0.1
           }
         ]
       },
@@ -2896,7 +2893,11 @@
         responsive: true,
         plugins: {
           legend: {
-            position: 'top',
+            position: 'bottom',
+            labels: {
+              usePointStyle: true,
+              pointStyle: 'rect',
+            }
           },
           tooltip: {
             mode: 'index',
@@ -2933,8 +2934,23 @@
         }
       }
     });
+    function toggleLegendBasedOnScreenSize(chart) {
+      if (window.innerWidth <= 767) { // Adjust the breakpoint as needed
+        chart.options.plugins.legend.display = false;
+      } else {
+        chart.options.plugins.legend.display = true;
+      }
+      chart.update();
+    }
 
 
+    // Initial check and setup for legend visibility based on screen size
+    toggleLegendBasedOnScreenSize(myChart);
+
+    // Add event listener for window resize to toggle legend visibility
+    window.addEventListener('resize', () => {
+      toggleLegendBasedOnScreenSize(myChart);
+    });
     const paginationElement = document.getElementById('customPagination');
 
     const swiper = new Swiper('.swiper-container', {
@@ -2973,7 +2989,14 @@
       submenu.classList.toggle("opacity-1");
     };
 
-
+    $(".filter_btn").click(function () {
+      $(".filter_btn").removeClass("activeBtn");
+      $(this).addClass("activeBtn");
+    });
+    $(".sidebarBtn").click(function () {
+      $(".sidebarBtn").removeClass("activeBtnSidebar");
+      $(this).addClass("activeBtnSidebar");
+    });
   </script>
 </body>
 
