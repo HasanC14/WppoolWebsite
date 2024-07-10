@@ -1,13 +1,3 @@
-// Loader
-// document.addEventListener("DOMContentLoaded", function () {
-//   document.querySelector(".loader-wrapper").style.display = "none";
-// });
-
-// document.addEventListener("scroll", function () {
-//   const scrollPosition = window.scrollY;
-//   const parallaxElement = document.querySelector(".background");
-//   parallaxElement.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-// });
 document.addEventListener("scroll", function () {
   const navbar = document.querySelector(".nav");
   const nav_logo1 = document.querySelector(".nav_logo1");
@@ -39,11 +29,4 @@ document.addEventListener("scroll", function () {
     nav_text.classList.add("bg-prime", "border-white", "text-white");
     nav_text.classList.remove("border-blue-500");
   }
-});
-
-$("#table").DataTable({
-  searching: true,
-  ordering: true,
-  paging: true,
-  responsive: true,
 });

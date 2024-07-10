@@ -2993,10 +2993,20 @@
       $(".filter_btn").removeClass("activeBtn");
       $(this).addClass("activeBtn");
     });
+
     $(".sidebarBtn").click(function () {
       $(".sidebarBtn").removeClass("activeBtnSidebar");
       $(this).addClass("activeBtnSidebar");
     });
+
+
+    $("#table").DataTable({
+      searching: true,
+      ordering: true,
+      paging: true,
+      responsive: true,
+    });
+
   </script>
 </body>
 
